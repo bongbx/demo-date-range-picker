@@ -1,0 +1,15 @@
+<p>date-range works!</p>
+<nz-date-picker
+  [nzDisabled]="isDisable"
+  [(ngModel)]="startDate"
+  nzPlaceHolder="Start date"
+  [nzDisabledDate]="disabledStartDate"
+  (ngModelChange)="dateChange()"
+  ></nz-date-picker>
+<nz-date-picker
+  [nzDisabled]="isDisable"
+  [(ngModel)]="endDate"
+  nzPlaceHolder="End date"
+  [nzDisabledDate]="disabledEndDate"
+  (ngModelChange)="dateChange()"
+></nz-date-picker>
